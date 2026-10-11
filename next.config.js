@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',          // static HTML export → works with GitHub Pages
+  output: 'export',
   images: { unoptimized: true },
-  trailingSlash: true,       // better for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '' : '', // set later if repo is username.github.io
+  trailingSlash: true,
+  basePath: '/Abhishek_Gautam_Portfolio',
 };
 
 module.exports = nextConfig;
