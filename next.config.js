@@ -3,7 +3,7 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
   trailingSlash: true,
-  basePath: '/Abhishek_Gautam_Portfolio',
+  basePath: '',   // empty for custom domain
 };
 
 module.exports = nextConfig;
