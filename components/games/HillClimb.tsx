@@ -32,8 +32,9 @@ export default function HillClimb() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const ctxRaw = canvas.getContext("2d");
+    if (!ctxRaw) return;
+    const ctx: CanvasRenderingContext2D = ctxRaw;
 
     const parent = canvas.parentElement;
     const maxW = Math.min(780, (parent?.clientWidth || 780) - 16);
